@@ -47,3 +47,10 @@ function stopPenis() {
     penis = false;
     stopper?.pause();
 }
+
+import { createServer } from "http";
+const server = createServer((req, res) => {
+  res.writeHead(200);
+  res.end('ok');
+});
+server.listen(3000);
